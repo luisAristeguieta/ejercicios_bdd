@@ -110,6 +110,12 @@ where correo = 'estu1@gmail.com';
 alter table estudiantes
 add column correo varchar(100);
 
+-- Consultas por fecha: 
+select * from estudiantes where fecha_registro > '2026-02-01';
+select * from estudiantes where fecha_registro < '2026-05-01';
+select * from estudiantes where fecha_registro between '2026-05-10' and '2026-05-20';
+select * from estudiantes where fecha_registro = '2026-03-15';
+select * from estudiantes where curso like '%Programacion%' and fecha_registro > '2026-01-01';
 
 
 
