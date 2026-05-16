@@ -10,7 +10,7 @@ create table estudiantes(
 );
 
 insert into estudiantes (id_estudiante,nombres,apellidos,edad,curso,fecha_registro)
-values ('1712345670','Luis Enrique','Aristeguieta Jimenez',35, 'Base de Datos','2026-05-16'),
+values (1712345670,'Luis Enrique','Aristeguieta Jimenez',35, 'Base de Datos','2026-05-16'),
 (1712345671,'Andrea Sofia','Morales Perez',22,'Programacion Java','2026-05-10'),
 (1712345672,'Carlos Andres','Mendoza Vera',28,'Base de Datos','2026-05-11'),
 (1712345673,'Maria Fernanda','Zambrano Lopez',19,'Desarrollo Web','2026-05-12'),
@@ -35,6 +35,39 @@ select * from estudiantes where edad between 18 and 25; -- Estudiantes entre 18 
 select * from estudiantes where  curso = 'Base de Datos'; -- Curso base de datos
 select * from estudiantes where fecha_registro > '2026-03-01'; -- Registro despues del 01 de marzo
 select * from estudiantes where fecha_registro > '2026-03-01' and fecha_registro <'2026-04-30'; -- Registro en 01/3 al 30/4
+
+-- Actualizar 5 registro: 
+-- update nombreTabla set columna/condicion(es) where condicion (es);
+
+-- Curso:
+update estudiantes
+set curso = 'Inteleigencia Artificial'
+where id_estudiante = 1712345670;
+
+-- Edad:
+update estudiantes
+set edad = 32
+where id_estudiante = 1712345671;
+
+-- Fecha:
+update estudiantes
+set fecha_registro = '2026-05-16'
+where id_estudiante = 1712345684;
+
+-- Varios campos:
+update estudiantes
+set nombres = 'Armando Jose',
+	edad = 100
+where id_estudiante = 1712345683;
+
+-- Varios campos de nuevo: 
+update estudiantes 
+set curso = 'Backend con Java',
+    edad = 24,
+    fecha_registro = '2026-06-10'
+where id_estudiante = 1712345684;
+
+
 
 
 
