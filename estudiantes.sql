@@ -1,10 +1,11 @@
---drop table if exists estudiantes;
+drop table if exists estudiantes;
 
 create table estudiantes(
-	id_estudiante INT,
+	id_estudiante INT Primary Key,
 	nombres varchar(50),
 	apellidos varchar(50),
 	edad INT,
 	curso varchar(50),
 	fecha_registro varchar(10)
 );
+
