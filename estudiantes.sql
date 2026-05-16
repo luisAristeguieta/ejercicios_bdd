@@ -68,9 +68,27 @@ set curso = 'Backend con Java',
 where id_estudiante = 1712345684;
 
 
+-- Eliminar: 
 
+--Por Id: 
+delete from estudiantes
+where id_estudiante = 1712345670;
 
+--Por curso: 
+delete from estudiantes
+where curso = 'Seguridad Informatica';
 
+--Por Edad: 
+delete from estudiantes
+where edad > 30;
+
+-- Por fecha
+delete from estudiantes
+where fecha_registro > '2026-05-21' and fecha_registro < '2026-05-23';
+
+-- eliminar por varios criterios
+delete from estudiantes 
+where curso = 'Programacion Java' and edad < 25;
 
 
 
