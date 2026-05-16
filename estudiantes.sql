@@ -26,3 +26,20 @@ values ('1712345670','Luis Enrique','Aristeguieta Jimenez',35, 'Base de Datos','
 (1712345683,'Carlos Andres','Mendoza Vera',28,'Desarrollo Web','2026-05-22'),
 (1712345684,'Maria Fernanda','Zambrano Lopez',19,'Programacion Java','2026-05-23');
 
+-- Mostrar datos: 
+
+select * from estudiantes; -- Todo los estudiantes
+select nombres,curso from estudiantes; -- Nombre y cursos
+select * from estudiantes where edad >18; -- Estudiantes mayores a 18
+select * from estudiantes where edad between 18 and 25; -- Estudiantes entre 18 y 25
+select * from estudiantes where  curso = 'Base de Datos'; -- Curso base de datos
+select * from estudiantes where fecha_registro > '2026-03-01'; -- Registro despues del 01 de marzo
+select * from estudiantes where fecha_registro > '2026-03-01' and fecha_registro <'2026-04-30'; -- Registro en 01/3 al 30/4
+
+
+
+
+
+
+
+
